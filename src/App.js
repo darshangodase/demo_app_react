@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Item from './component/item';
+import Itemdate from './component/itemdate';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <Item name="nirma">
+        my name is darshan
+      </Item>
+      <Itemdate day="20" month="june" year="2021"></Itemdate>
+
+      <Item name="ghadi">
+      my name is prajwal
+      </Item>
+      <Itemdate day="5" month="may" year="2021"></Itemdate>
+
+      <Item name="rin">
+      my name is vishwa
+      </Item>
+      <Itemdate day="18" month="july" year="2021"></Itemdate>
+      
+      <div className="App">
+        Hello jee
+      </div>
     </div>
   );
 }
